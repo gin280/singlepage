@@ -1,0 +1,197 @@
+@import "compass";
+
+ul, li {
+    list-style: none;
+}
+
+/* 侧栏 */
+.htlShare {
+    bottom: 5px;
+    overflow: visible;
+    position: fixed;
+    right: 0;
+    width: 46px;
+    z-index: 999999;
+    @include box-sizing(content-box);
+   
+}
+
+#rlist1 {
+    float: right;
+    margin-bottom: 45px;
+    width: 46px;
+    z-index: 101;
+     @include box-sizing(content-box);
+}
+
+#rlist5 {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    right: -10px;
+    width: 160px;
+    z-index: 999999;
+     @include box-sizing(content-box);
+}
+
+.cf li {
+    height: 46px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 46px;
+     @include box-sizing(content-box);
+
+}
+
+.cf li:hover {
+    background: none repeat scroll 0 0 #FFAE01;
+     @include box-sizing(content-box);
+}
+
+.cf a {
+    display: block;
+    height: 46px;
+    overflow: hidden;
+    text-indent: -99em;
+     @include box-sizing(content-box);
+}
+
+.cf a {
+    background: url(../img/spirite_temp.png) no-repeat;
+     @include box-sizing(content-box);
+}
+
+.share .share_a {
+    background-position: 0 -128px;
+     @include box-sizing(content-box);
+}
+
+.share .share_a:hover, .share .cur {
+    background-position: -105px -128px;
+     @include box-sizing(content-box);
+}
+
+.top .top_a {
+    background-position: -53px -128px;
+     @include box-sizing(content-box);
+}
+
+.top .top_a:hover {
+    background-position: -158px -128px;
+     @include box-sizing(content-box);
+}
+
+.share_lis {
+    background: none repeat scroll 0 0 #FFAE01;
+    height: 30px;
+    padding: 8px 0 8px 3px;
+    position: absolute;
+    right: 44px;
+    top: 0;
+    width: 112px;
+    @include box-sizing(content-box);
+}
+
+.share_lis a {
+    display: inline;
+    float: left;
+    height: 30px;
+    margin-left: 5px;
+    width: 30px;
+     @include box-sizing(content-box);
+}
+
+.share_lis .a0 {
+    background-position: 0 -88px;
+     @include box-sizing(content-box);
+}
+
+.share_lis .a1 {
+    background-position: -40px -88px;
+     @include box-sizing(content-box);
+}
+
+.share_lis .a2 {
+    background-position: -80px -88px;
+     @include box-sizing(content-box);
+}
+
+.share_lis .a3 {
+    background-position: -120px -88px;
+     @include box-sizing(content-box);
+}
+
+.share_lis .a4 {
+    background-position: -160px -88px;
+     @include box-sizing(content-box);
+}
+
+#w2wm {
+    background: #009EDA;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+    height: 100px;
+    overflow: hidden;
+    padding-top: 4px;
+    text-align: center;
+    width: 36px;
+     @include box-sizing(content-box);
+}
+
+#w2wm p {
+    border-top-left-radius: 4px;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 75px;
+    line-height: 16px;
+    padding: 6px 11px 0;
+    width: 14px;
+     @include box-sizing(content-box);
+}
+
+#w2wm .pointr {
+    background: url(../img/shareArr4.gif) no-repeat scroll 4px -19px rgba(0, 0, 0, 0);
+    display: block;
+    height: 19px;
+    width: 36px;
+     @include box-sizing(content-box);
+}
+
+#w2wm .pointl {
+    background: url(../img/shareArr4.gif) no-repeat scroll -23px -19px rgba(0, 0, 0, 0);
+    display: block;
+    height: 19px;
+    width: 36px;
+     @include box-sizing(content-box);
+}
+
+.ewm {
+    background: #fff;
+    border: 3px solid #009eda;
+    border-right: none;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+     @include box-sizing(content-box);
+}
+
+.ewm img {
+    height: 178px;
+    width: 100px;
+     @include box-sizing(content-box);
+}
+
+#ewm {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+     @include box-sizing(content-box);
+}
+
+
+//others 
+
+
+

@@ -1,0 +1,55 @@
+/* line 4, ../sass/slide.scss */
+.wrap {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 13, ../sass/slide.scss */
+ul {
+  list-style: none;
+  z-index: 99999;
+}
+/* line 17, ../sass/slide.scss */
+ul li {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  z-index: 99999;
+}
+
+/* line 28, ../sass/slide.scss */
+.content {
+  overflow: hidden;
+}
+/* line 30, ../sass/slide.scss */
+.content div {
+  width: 600px;
+  height: 300px;
+}
+
+/* line 36, ../sass/slide.scss */
+#d1 {
+  background-color: blue;
+}
+
+/* line 40, ../sass/slide.scss */
+#d2 {
+  background-color: yellow;
+}
+
+/* line 44, ../sass/slide.scss */
+#d3 {
+  background-color: cyan;
+}
+
+/* line 48, ../sass/slide.scss */
+body {
+  background-color: #333;
+}

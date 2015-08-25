@@ -1,0 +1,157 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/_bourbon";
+@import "compass";
+
+body {
+	font-family: Georgia,serif;
+	background-color: #ddd;
+	font-weight: 400;
+	font-size: 15px;
+	color: #333;
+	overflow: hidden;
+	
+}
+
+a{
+	color: #555;
+}
+.container {
+	background-color: cyan;
+	
+}
+
+.st-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	input,a {
+		width: 20%;
+		height: 34px;
+		line-height: 34px;
+		position: fixed;
+		bottom: 0;
+	}
+	input {
+		opacity: 0.8;
+		z-index: 1000;
+		cursor: pointer;
+		&:hover + a {
+			background-color: #ad244f;
+		}
+	}
+	a {
+		z-index: 10;
+		font-weight: 700;
+		font-size: 17px;
+		background-color: #e23a6e;
+		text-align: center;
+		color: #fff;
+		@include box-shadow(1px 1px 1px rgba(151,24,64,.2));
+
+	}
+	#st-control-1, #st-control-1 + a {
+		left:0%;
+	}
+	#st-control-2, #st-control-2 + a {
+		left:20%;
+	}
+	#st-control-3, #st-control-3 + a {
+		left:40%;
+	}
+	#st-control-4, #st-control-4 + a {
+		left:60%;
+	}
+	#st-control-5, #st-control-5 + a {
+		left:80%;
+	}
+}
+
+.st-container > input:checked + a {
+	background-color: #821134;
+}
+
+.st-container input:checked + a:after {
+	content:"";
+	position: absolute;
+	bottom: 100%;
+	left:50%;
+	@include triangle(40px,#821134,up);
+	margin-left: -20px;
+}
+
+//content
+
+.st-scroll,.st-panel {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.st-scroll {
+	left:0;
+	top:0;
+	@include transform(translate(0));
+	@include transition(.6s ease-in-out);
+}
+
+.st-panel {
+	overflow: hidden;
+	background-color: #fff;
+	&:nth-child(2n) {
+		background-color: #1BB23D;
+	}
+}
+
+#st-control-1:checked ~ .st-scroll {
+	@include transform(translateY(0%));
+}
+
+#st-control-2:checked ~ .st-scroll {
+	@include transform(translateY(-100%));
+}
+
+#st-control-3:checked ~ .st-scroll {
+	@include transform(translateY(-200%));
+}
+
+#st-control-4:checked ~ .st-scroll {
+	@include transform(tanslateY(-300%));
+}
+
+#st-control-5:checked ~ .st-scroll {
+	@include transform(translateY(-400%));
+}
+
+.st-desc {
+	height: 200px;
+	width: 200px;
+	background-color: pink;
+	position: absolute;
+	left:50%;
+	top:-100px;
+	margin-left: -100px;
+	@include transform(translateY(-50%));
+	@include transform(rotate(45deg));
+
+}
+
+article {
+	margin:0 auto;
+	margin-left: 400px;
+	img {
+		@include animation(breath 2s infinite);
+	}
+}
+
+@include keyframes(breath) {
+	0% {
+		@include transform(scale(1));
+	}
+	50% {
+		@include transform(scale(3));
+	}
+	100% {
+		@include transform(scale(1));
+	}
+}
